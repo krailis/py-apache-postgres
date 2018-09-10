@@ -1,6 +1,6 @@
 # py-apache-postgres
 
-Dockerized Apache & PostgreSQL services, built on top of [official Ubuntu](https://hub.docker.com/r/library/ubuntu/) image.
+Dockerized Apache & PostgreSQL services, built on top of [official Ubuntu](https://hub.docker.com/r/library/ubuntu/) images.
 
 # Image tags
 * krailis/py-apache-postgres:latest
