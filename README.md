@@ -2,6 +2,9 @@
 
 Dockerized Apache & PostgreSQL services, built on top of [official Ubuntu](https://hub.docker.com/r/library/ubuntu/) images.
 
+# Purpose
+The purpose of this image is not to run as standalone but use as base for quicker deployments of Django applications. It includes Apache2 as the web server and PostgreSQL as the database.
+
 # Image tags
 * krailis/py-apache-postgres:latest
 * krailis/py-apache-postgres:18.04
@@ -20,6 +23,3 @@ Dockerized Apache & PostgreSQL services, built on top of [official Ubuntu](https
 # Exposed Ports
 * 80, 8000
 * 5432
-
-# Purpose
-The purpose of this image is not to run as standalone but use as base for quicker deployments of Django applications. It includes Apache2 as the web server and PostgreSQL as the database.
