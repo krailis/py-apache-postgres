@@ -29,5 +29,3 @@ The purpose of this image is not to run as standalone but use as base for quicke
 * 80, 8000
 * 5432
 
-# Source Repository
-* [krailis/py-apache-postgres](https://github.com/krailis/py-apache-postgres)
