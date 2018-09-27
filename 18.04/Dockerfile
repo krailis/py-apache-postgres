@@ -1,11 +1,19 @@
 FROM ubuntu:18.04
 
 # Perform an update and install packages
-RUN apt-get update --fix-missing \
- && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-                                              apache2 libapache2-mod-wsgi-py3 apache2-bin \
-                                              python3-dev python3-setuptools python3-pip nano \
-                                              postgresql postgresql-contrib libpq-dev \
-                                              libssl-dev libffi-dev language-pack-en-base
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    apache2 \
+    apache2-bin \
+    language-pack-en-base \
+    libapache2-mod-wsgi-py3 \
+    libffi-dev \
+    libpq-dev \
+    libssl-dev \
+    postgresql \
+    postgresql-contrib \
+    python3-dev \
+    python3-setuptools \
+    python3-pip nano \
+ && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 80 8000 5432
